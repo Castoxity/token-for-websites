@@ -22,7 +22,7 @@ function generateTokenWithExpiration() {
     // combining current timestamp with random string and them encoding it using base64
     //substring(2) remnoves first 2 characters of the string cuz math.random().tostring(36) starts with 0
     // btoa() this function encodes a string using Base64 encoding. Base64 is a method of encoding binary diary into an ACII string,
-    const expirationTime = Date.now() + 10 * 1000; //currently 10 seconds
+    const expirationTime = Date.now() + 5 * 1000; //currently 10 seconds
     localStorage.setItem('token', JSON.stringify({ token, expirationTime })); //stores as json string
     return token;
 }
