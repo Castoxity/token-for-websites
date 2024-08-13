@@ -27,7 +27,7 @@ function generateTokenWithExpiration() {
     return token;
 }
 
-function goToProfile(profile) {
+function bruh(profile) {
     const token = generateTokenWithExpiration();
     window.location.href = `${profile}.html?token=${token}`;
 }
